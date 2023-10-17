@@ -2,9 +2,13 @@
 
 This repository contains PyTorch implementation for ICCV2023 paper __Tem-adapter: Adapting Image-Text Pretraining for Video Question Answer__ [[arXiv]](https://arxiv.org/pdf/2308.08414v1.pdf)
 
+
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/tem-adapter-adapting-image-text-pretraining/video-question-answering-on-sutd-trafficqa)](https://paperswithcode.com/sota/video-question-answering-on-sutd-trafficqa?p=tem-adapter-adapting-image-text-pretraining)
 
+
 We propose Tem-Adapter, which enables the learning of temporal dynamics and complex semantics by a visual Temporal Aligner and a textual Semantic Aligner. Tem-adapter introduces a language-guided autoregressive task to guide the learning of temporal dependency and thus reduce the temporal gap between image-based pre-training and video-based QA tasks.
+
+
 
 
 ![intro](fig/framework.PNG)
@@ -37,7 +41,7 @@ pip install -r requirements.txt
 
 The SUTD-TrafficQA dataset is publicly released. You can download the original videos and text annotations from https://sutdcv.github.io/SUTD-TrafficQA/#/explore
 
-You can use OpenAI's CLIP as the pre-trained image encoder (ViT-B32). The following instructions can be used.
+You can use OpenAI's CLIP as the pre-trained image encoder (ViT-B32). The following instructions can be followed.
 
 1. Create a folder `./data/` in current directory, such as:
 ```
@@ -48,9 +52,9 @@ codes_tem_adapter/
 |–– ...
 ```
 
-2. Unzip downloaded video file 'raw_videos.zip' to data as `./data/raw_videos/`.
+2. Unzip downloaded video file 'raw_videos.zip' to 'data' as `./data/raw_videos/`.
 
-3. Put the downloaded annotation file 'R3_all.jsonl' to data as `./data/annotation_file/R3_all.jsonl`.
+3. Put the downloaded annotation file 'R3_all.jsonl' to 'data' as `./data/annotation_file/R3_all.jsonl`.
 
 
 The directory should have the following structure:
@@ -69,16 +73,15 @@ codes_tem_adapter/
 |–– ...
 ```
 
-4. Run the following command to extract features with CLIP visual encoder.
+4. Run the following command to extract features with the CLIP visual encoder.
 
 ```bash
 python preprocess/preprocess_features.py --gpu_id 0 --dataset sutd-traffic --model clip_image 
 ```
-Then it will be a new folder `./data/sutd-traffic/` under the current path.
+Then there will be a new folder `./data/sutd-traffic/` under the current path.
 
 
-5. Download the texts from https://anonymous.4open.science/r/SUTD-TrafficQA-Texts-5073/
-and put them under the `./data/sutd-traffic/` 
+5. Download the texts (QA pairs) from [here](https://drive.google.com/drive/folders/1NgfWg6MBD_LYGBXlJqUtlZ52ZEivFSKE?usp=sharing) and put them under the path `./data/sutd-traffic/` 
 
 The dataset directory should have the following structure:
 
@@ -104,7 +107,7 @@ codes_tem_adapter/
 
 1. Create a new folder "pretrained" under the path 'codes_tem_adapter/'
 
-2. Download the trained checkpoints from this [link](https://drive.google.com/drive/folders/1SplEKEjrp-Uw-PxziyBHvUuU-yQ0YevX?usp=sharing) and put them under tha path 'codes_tem_adapter/pretrained/'
+2. Download the trained checkpoints from this [link](https://drive.google.com/drive/folders/1SplEKEjrp-Uw-PxziyBHvUuU-yQ0YevX?usp=sharing) and put them under the path 'codes_tem_adapter/pretrained/'
 
 
 The directory should have the following structure:
