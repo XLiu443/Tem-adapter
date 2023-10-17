@@ -2,9 +2,9 @@
 
 This repository contains PyTorch implementation for ICCV2023 paper __Tem-adapter: Adapting Image-Text Pretraining for Video Question Answer__ [[arXiv]](https://arxiv.org/pdf/2308.08414v1.pdf)
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/tem-adapter-adapting-image-text-pretraining/video-question-answering-on-sutd-trafficqa)](https://paperswithcode.com/sota/video-question-answering-on-sutd-trafficqa?p=tem-adapter-adapting-image-text-pretraining)
+
 We propose Tem-Adapter, which enables the learning of temporal dynamics and complex semantics by a visual Temporal Aligner and a textual Semantic Aligner. Tem-adapter introduces a language-guided autoregressive task to guide the learning of temporal dependency and thus reduce the temporal gap between image-based pre-training and video-based QA tasks.
-
-
 
 
 ![intro](fig/framework.PNG)
