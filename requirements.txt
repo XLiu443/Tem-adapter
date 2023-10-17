@@ -1,0 +1,9 @@
+easydict
+h5py
+nltk
+numpy
+pandas
+Pillow
+tqdm
+termcolor
+pyyaml

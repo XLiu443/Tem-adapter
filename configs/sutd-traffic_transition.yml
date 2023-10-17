@@ -1,0 +1,24 @@
+gpu_id: 0
+multi_gpus: False
+num_workers: 8
+seed: 66666
+exp_name: 'sutd-traffic'
+
+train:
+  lr: 0.0001
+  batch_size: 128
+  restore: False
+  max_epochs: 50
+  module_dim: 512
+
+val:
+  flag: False
+
+test:
+  write_preds: False
+
+dataset:
+  name: 'sutd-traffic'
+  data_dir: './data/sutd-traffic/'
+  save_dir: 'results/'
+  annotation_file: './data/sutd-traffic/output_file_{}.jsonl'
