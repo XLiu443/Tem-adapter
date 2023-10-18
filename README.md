@@ -45,7 +45,7 @@ You can use OpenAI's CLIP as the pre-trained image encoder (ViT-B32). The follow
 
 1. Create a folder `./data/` in current directory, such as:
 ```
-codes_tem_adapter/
+Tem-adapter/
 |–– configs/
 |–– data/
 |–– model/
@@ -60,7 +60,7 @@ codes_tem_adapter/
 The directory should have the following structure:
 
 ```
-codes_tem_adapter/
+Tem-adapter/
 |–– configs/
 |–– data/
 |   |–– raw_videos
@@ -86,7 +86,7 @@ Then there will be a new folder `./data/sutd-traffic/` under the current path.
 The dataset directory should have the following structure:
 
 ```
-codes_tem_adapter/
+Tem-adapter/
 |–– configs/
 |–– data/
 |   |–– raw_videos
@@ -105,15 +105,15 @@ codes_tem_adapter/
 
 ## Evaluate the trained model
 
-1. Create a new folder "pretrained" under the path 'codes_tem_adapter/'
+1. Create a new folder "pretrained" under the path 'Tem-adapter/'
 
-2. Download the trained checkpoints from this [link](https://drive.google.com/drive/folders/1SplEKEjrp-Uw-PxziyBHvUuU-yQ0YevX?usp=sharing) and put them under the path 'codes_tem_adapter/pretrained/'
+2. Download the trained checkpoints from this [link](https://drive.google.com/drive/folders/1SplEKEjrp-Uw-PxziyBHvUuU-yQ0YevX?usp=sharing) and put them under the path 'Tem-adapter/pretrained/'
 
 
 The directory should have the following structure:
 
 ```
-codes_tem_adapter/
+Tem-adapter/
 |–– configs/
 |–– data/
 |   |–– raw_videos
@@ -178,5 +178,5 @@ If you find our work useful in your research, please consider citing:
 ```
 
 ## Acknowledgement
-Our reproduction of the methods is mainly based on the [SUTD-TrafficQA](https://github.com/SUTDCV/SUTD-TrafficQA) and [HCRN-VideoQA](https://github.com/thaolmk54/hcrn-videoqa), we thank the authors to release their code. If you use the related part, 
+Our reproduction of the methods is mainly based on the [SUTD-TrafficQA](https://github.com/SUTDCV/SUTD-TrafficQA) and [HCRN-VideoQA](https://github.com/thaolmk54/hcrn-videoqa), we thank the authors to release their codes. 
 
